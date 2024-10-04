@@ -21,16 +21,7 @@ namespace ShowCelulao
                 Pontuacao = 10000;
             else if (n == 5)
                 Pontuacao = 20000;
-            else if (n == 6)
-                Pontuacao = 50000;
-            else if (n == 7)
-                Pontuacao = 10000;
-            else if (n == 8)
-                Pontuacao = 20000;
-            else if (n == 9)
-                Pontuacao = 500000;
-            else if (n == 10)
-                Pontuacao = 1000000;
+            
         }
         public Questao GetQuestaoAtual()
         {
@@ -59,7 +50,7 @@ namespace ShowCelulao
             if (QuestaoAtual.VerificaResposta(RespostaSelecionada))
             {
                 await Task.Delay(1500);
-                if (NivelAtual == 10)
+                if (NivelAtual == 5)
                 {
 
 
